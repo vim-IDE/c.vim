@@ -1,15 +1,15 @@
 adjustfield
 basefield
-boolalpha 
+boolalpha
 floatfield
-internal 
-scientific 
+internal
+scientific
 setbase
 setiosflags
 setprecision
-showbase 
-showpoint 
-showpos 
+showbase
+showpoint
+showpos
 uppercase
 
 auto
@@ -42,8 +42,8 @@ unsigned
 void
 volatile
 while
-_Bool     
-_Complex  
+_Bool
+_Complex
 _Imaginary
 EXIT_FAILURE
 EXIT_SUCCESS
