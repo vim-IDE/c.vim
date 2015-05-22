@@ -26,13 +26,13 @@ filetype  indent on
 "-------------------------------------------------------------------------------
 " Switch syntax highlighting on.
 "-------------------------------------------------------------------------------
-syntax    on            
+syntax    on
 "
 " Platform specific items:
 " - central backup directory (has to be created)
 " - default dictionary
-" Uncomment your choice.  
-if  has("win16") || has("win32")     || has("win64") || 
+" Uncomment your choice.
+if  has("win16") || has("win32")     || has("win64") ||
   \ has("win95") || has("win32unix")
     "
 "    runtime mswin.vim
@@ -95,9 +95,9 @@ inoremap  <C-Esc>  <C-C>:close<CR>
 " The current buffer will be saved before switching to the next one.
 " Choose :bprevious or :bnext
 "-------------------------------------------------------------------------------
- noremap  <silent> <s-tab>       :if &modifiable && !&readonly && 
+ noremap  <silent> <s-tab>       :if &modifiable && !&readonly &&
      \                      &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
-inoremap  <silent> <s-tab>  <C-C>:if &modifiable && !&readonly && 
+inoremap  <silent> <s-tab>  <C-C>:if &modifiable && !&readonly &&
      \                      &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 "
 "-------------------------------------------------------------------------------
@@ -126,7 +126,7 @@ endif " has("autocmd")
 "    F5   -  open quickfix error window
 "    F6   -  close quickfix error window
 "    F7   -  display previous error
-"    F8   -  display next error   
+"    F8   -  display next error
 "-------------------------------------------------------------------------------
 "
 map   <silent> <F2>        :write<CR>
@@ -151,9 +151,9 @@ imap  <silent> <F8>   <Esc>:cn<CR>
 " Choose :bprevious or :bnext
 "-------------------------------------------------------------------------------
 "
- map  <silent> <s-tab>  <Esc>:if &modifiable && !&readonly && 
+ map  <silent> <s-tab>  <Esc>:if &modifiable && !&readonly &&
      \                  &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
-imap  <silent> <s-tab>  <Esc>:if &modifiable && !&readonly && 
+imap  <silent> <s-tab>  <Esc>:if &modifiable && !&readonly &&
      \                  &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 "
 "-------------------------------------------------------------------------------
@@ -198,9 +198,9 @@ endif " has("autocmd")
 "-------------------------------------------------------------------------------
 " c.vim
 "-------------------------------------------------------------------------------
-"            
+"
 " --empty --
-"                         
+"
 "-------------------------------------------------------------------------------
 " taglist.vim : toggle the taglist window
 " taglist.vim : define the title texts for make
