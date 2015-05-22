@@ -2,15 +2,15 @@
 "
 " Vim filetype plugin file (part of the c.vim plugin)
 "
-"   Language :  make 
-"     Plugin :  c.vim 
+"   Language :  make
+"     Plugin :  c.vim
 " Maintainer :  Fritz Mehner <mehner@fh-swf.de>
 "   Revision :  $Id: make.vim,v 1.4 2011/12/27 21:04:33 mehner Exp $
 "
 " ------------------------------------------------------------------------------
 "
 " Only do this when not done yet for this buffer
-" 
+"
 if exists("b:did_make_ftplugin")
   finish
 endif
