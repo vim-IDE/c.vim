@@ -1,64 +1,76 @@
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.do-while ==
-do {
-<SPLIT>} while ( <CURSOR> );				/* -----  end do-while  ----- */
+do
+{
+	<SPLIT>
+} while (<CURSOR>);
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.for ==
-for ( <CURSOR>; ; )
+for (<CURSOR>; ;)
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.for-block ==
-for ( <CURSOR>; ; ) {
-<SPLIT>}
+for (<CURSOR>; ;)
+{
+	<SPLIT>
+}
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.if ==
-if ( <CURSOR> )
+if (<CURSOR>)
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.if-block ==
-if ( <CURSOR> ) {
-<SPLIT><-IF PART->
+if (<CURSOR>)
+{
+	<SPLIT><-IF PART->
 }
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.if-else ==
-if ( <CURSOR> )
-<SPLIT>else
+if (<CURSOR>)
+<SPLIT>
+else
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.if-block-else ==
-if ( <CURSOR> ) {
+if (<CURSOR>)
+{
 <SPLIT><-IF PART->
 }
-else {
+else
+{
 <-ELSE PART->
 }
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.else-block ==
-else {
+else
+{
 <CURSOR><SPLIT>
 }
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.while ==
-while ( <CURSOR> )
+while (<CURSOR>)
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.while-block ==
-while ( <CURSOR> ) {
-<SPLIT>}
+while (<CURSOR>)
+{
+<SPLIT>
+}
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.switch ==
-switch ( <CURSOR> ) {
-	case <-LABEL->:	
+switch (<CURSOR>)
+{
+	case <-LABEL->:
 		<SPLIT>break;
 
-	case <-LABEL->:	
+	case <-LABEL->:
 		break;
 
-	case <-LABEL->:	
+	case <-LABEL->:
 		break;
 
-	default:	
+	default:
 		break;
-}				/* -----  end switch  ----- */
+}
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == statements.case ==
-case <CURSOR>:	
+case <CURSOR>:
 break;
 
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

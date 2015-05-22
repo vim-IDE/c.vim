@@ -6,49 +6,49 @@ $-------------------------------------------------------------------------
 #include "<CURSOR>"
 $-------------------------------------------------------------------------
 == preprocessor.define == insert ==
-#define	<CURSOR>			/*  */
+#define	<CURSOR>
 $-------------------------------------------------------------------------
 == preprocessor.undefine == insert ==
-#undef	<CURSOR>			/*  */
+#undef	<CURSOR>
 $-------------------------------------------------------------------------
 == preprocessor.if-endif ==
 #if  |?CONDITION:u|
 <CURSOR><SPLIT>
-#endif     /* -----  |CONDITION|  ----- */
+#endif
 $-------------------------------------------------------------------------
 == preprocessor.if-else-endif ==
 #if  |?CONDITION:u|
 <CURSOR><SPLIT>
-#else      /* -----  not |CONDITION|  ----- */
+#else
 <+ELSE PART+>
-#endif     /* -----  not |CONDITION|  ----- */
+#endif
 $-------------------------------------------------------------------------
 == preprocessor.ifdef-else-endif ==
 #ifdef  |?CONDITION:u|
 <CURSOR><SPLIT>
-#else      /* -----  not |CONDITION|  ----- */
+#else
 <+ELSE PART+>
-#endif     /* -----  not |CONDITION|  ----- */
+#endif
 $-------------------------------------------------------------------------
 == preprocessor.ifndef-else-endif ==
 #ifndef  |?CONDITION:u|
 <CURSOR><SPLIT>
-#else      /* -----  not |CONDITION|  ----- */
+#else
 <+ELSE PART+>
-#endif     /* -----  not |CONDITION|  ----- */
+#endif
 $-------------------------------------------------------------------------
 == preprocessor.ifndef-def-endif ==
 #ifndef  |?BASENAME:L|_INC
 #define  |BASENAME|_INC
 <CURSOR><SPLIT>
-#endif   /* ----- #ifndef |BASENAME|_INC  ----- */
+#endif
 $-------------------------------------------------------------------------
 == preprocessor.error ==
-#error	"<CURSOR>"			/*  */
+#error	"<CURSOR>"
 $-------------------------------------------------------------------------
 == preprocessor.line ==
-#line	<CURSOR>			/*  */
+#line	<CURSOR>
 $-------------------------------------------------------------------------
 == preprocessor.pragma ==
-#pragma	<CURSOR>			/*  */
+#pragma	<CURSOR>
 $-------------------------------------------------------------------------
