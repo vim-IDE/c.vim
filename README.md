@@ -1,6 +1,6 @@
 c.vim
 ==================================================
-[TOC]
+
 Branch specification
 ==================================================
 This branch is conformed to the Allman/BSD indentation style (see http://en.wikipedia.org/wiki/Indent_style).
@@ -9,6 +9,7 @@ Extra whitespaces and comments after a function or preprocessor directive declar
 Plugin description
 ==================================================
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=213
+
 **   Statement oriented editing of  C / C++ programs
 **   Speed up writing new code considerably.
 **   Write code und comments with a professional appearance from the beginning.
