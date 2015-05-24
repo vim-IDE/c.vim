@@ -3,7 +3,23 @@ c.vim
 
 Branch specification
 ==================================================
-This branch is conformed to the Allman/BSD indentation style (see http://en.wikipedia.org/wiki/Indent_style).
+This branch is conformed to the norme used at 42 (http://www.42.fr).
+It's an allman style, and it adds automatically the 42 header.
+
+The vim script comes from the 42 toolkit which QuentinPerez wrote. Thanks to
+him.
+
+(https://github.com/QuentinPerez/42-toolkit)
+
+You need to configure your 42 mail and 42 username in your shell configuration.
+
+```
+- export MAIL42=YourMail
+- export USER42=YourUser
+
+- reload your shell.
+```
+
 Extra whitespaces and comments after a function or preprocessor directive declaration are removed.
 
 Plugin description
